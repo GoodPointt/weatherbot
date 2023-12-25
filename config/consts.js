@@ -1,5 +1,3 @@
-// chat commands
-
 const CMD_TEXT = {
   myWeather: 'Check my location weather',
   otherWeather: 'Check other location weather',
