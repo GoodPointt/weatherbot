@@ -1,4 +1,4 @@
-require('dotenv').config({ path: './config/.env' });
+require('dotenv').config();
 
 const schedule = require('node-schedule');
 const axios = require('axios');
