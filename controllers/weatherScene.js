@@ -23,12 +23,10 @@ weatherScene.on('location', async (ctx) => {
     ctx.reply(
       `✨ ${data.timezone}
       \n${handleWeatherCode(data.current_weather.weathercode)}
-      \n🌡️ Temperature: ${data.current_weather.temperature} ${
+      \n🌡️ ${data.current_weather.temperature} ${
         data.hourly_units.temperature_2m
       }
-      \n💨 Wind: ${data.current_weather.windspeed} ${
-        data.hourly_units.windspeed_10m
-      }`
+      \n💨 ${data.current_weather.windspeed} ${data.hourly_units.windspeed_10m}`
     );
   } catch (error) {
     console.log(error);
