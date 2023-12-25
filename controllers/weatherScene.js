@@ -19,7 +19,6 @@ weatherScene.on('location', async (ctx) => {
     const { latitude, longitude } = msg.location;
 
     const data = await getWeatherLocationCoord({ latitude, longitude });
-    console.log(data);
 
     ctx.reply(
       `${handleWeatherCode(data.current_weather.weathercode)}${data.timezone}

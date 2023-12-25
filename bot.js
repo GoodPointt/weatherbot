@@ -12,8 +12,6 @@ const setupBot = () => {
   bot.use(stage.middleware());
 
   bot.use((ctx, next) => {
-    console.log(ctx.from);
-
     return next();
   });
   bot.start(start);
