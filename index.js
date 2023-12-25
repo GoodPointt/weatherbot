@@ -21,7 +21,7 @@ const { setupBot } = require('./bot');
 
 const job = schedule.scheduleJob('*/14 * * * *', async () => {
   try {
-    const response = await axios.get(REQ_URL);
+    const response = await axios.get(process.env.REQ_URL);
     if (response.status === 200) {
       console.log('✅ GET request to API successful');
     } else {
