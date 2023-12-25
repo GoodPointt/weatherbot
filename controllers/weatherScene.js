@@ -21,7 +21,7 @@ weatherScene.on('location', async (ctx) => {
     const data = await getWeatherLocationCoord({ latitude, longitude });
 
     ctx.reply(
-      `🏡 ${data.timezone}
+      `✨ ${data.timezone}
       \n${handleWeatherCode(data.current_weather.weathercode)}
       \n🌡️ Temperature: ${data.current_weather.temperature} ${
         data.hourly_units.temperature_2m
